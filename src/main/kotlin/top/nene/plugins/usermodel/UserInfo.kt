@@ -1,7 +1,12 @@
 package top.nene.plugins.usermodel
 
 
-class UserInfo(var wxOpenId:String,var DormitoryId:String,var elecMoney:Double,val email:String,var passwd:String) {
+class UserInfo(var wxOpenId:String,
+               var DormitoryId:String,
+               var elecMoney:Double,
+               val email:String,
+               var passwd:String,
+               var coname:String) {
     init {
         wxOpenId = "0000000000000000000000000000"
         DormitoryId = "null"

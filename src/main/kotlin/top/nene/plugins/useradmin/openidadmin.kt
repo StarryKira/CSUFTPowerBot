@@ -13,9 +13,9 @@ import top.nene.plugins.Cookie
 fun getOpenIdByRegex(wxLink:String):String{
     val regex = "(?<=id=)[^&]+".toRegex()
     val result = regex.find(wxLink)
-    return result?.value ?: "null"
+    return result?.value ?: "114514"
 }
-//返回三元组,返回<meterid,宿舍号，wxopenid>
+
 fun testOpenid(wxLink: String): String {
     runCatching {
         val url = "http://wsjdf.csuft.edu.cn/wx/app/api/user/searchBindHouseListForMoney"

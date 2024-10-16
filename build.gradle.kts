@@ -35,6 +35,7 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("io.ktor:ktor-server-content-negotiation:2.0.0")
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.0.0")
+    implementation("io.ktor:ktor-server-auth-jvm")
 
 
     testImplementation("io.ktor:ktor-server-test-host-jvm")

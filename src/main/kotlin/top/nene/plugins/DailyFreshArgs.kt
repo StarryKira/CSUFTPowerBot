@@ -1,3 +1,3 @@
 package top.nene.plugins
 
-var Cookie:String = "C6642625525BB3A82D898B43DF69F662"
+var Cookie:String = "This is your Cookie"   //开启服务post /getcookie接口后，会自动刷新Cookie
