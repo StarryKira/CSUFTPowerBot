@@ -3,7 +3,7 @@ package top.nene.plugins.routes
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import top.nene.ext.*
-import top.nene.plugins.useradmin.*
+import top.nene.plugins.utils.*
 
 
 fun Routing.getWxOpenId() {

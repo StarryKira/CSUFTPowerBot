@@ -1,6 +1,5 @@
-package top.nene.plugins.useradmin
+package top.nene.plugins.utils
 
-import io.ktor.http.*
 import okhttp3.FormBody
 import okhttp3.Headers
 import okhttp3.OkHttpClient

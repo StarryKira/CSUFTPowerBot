@@ -10,7 +10,6 @@ import io.ktor.server.response.*
 
 fun Routing.refreshCookie() {
     runCatching {
-        authenticate("myauth1") {
             post("/getcookie") {
                 Cookie = fetchPost("cookie")
                 call.respond(
@@ -20,7 +19,6 @@ fun Routing.refreshCookie() {
                         "cookie" to Cookie
                     ).json
                 )
-            }
         }
     }.onFailure {
         it.printStackTrace()
