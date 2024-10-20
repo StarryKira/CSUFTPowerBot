@@ -9,8 +9,13 @@ import org.jetbrains.exposed.sql.select
 import org.jetbrains.exposed.sql.transactions.transaction
 import org.mindrot.jbcrypt.BCrypt
 import top.nene.plugins.utils.Database.Users
+import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
 
 data class LoginRequest(val username:String,val password:String)
+
+
+private val logger: Logger = LogManager.getLogger("LoginRoute")
 
 fun Routing.login(){
     runCatching {
@@ -34,7 +39,7 @@ fun Routing.login(){
                     //登录成功，鉴权进入/getWxOpenID
                 }
             }
-        }.onFailure { 
-            it.printStackTrace()
+        }.onFailure {
+        logger.error("An error occurred", it)
     }
 }

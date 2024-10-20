@@ -39,7 +39,7 @@ dependencies {
 
     implementation("redis.clients:jedis:4.2.3")
 
-    implementation("io.ktor:ktor-server-core:2.0.0")
+    implementation("io.ktor:ktor-server-core:3.0.0")
     implementation("io.ktor:ktor-server-netty:2.0.0")
     implementation("io.ktor:ktor-server-sessions:2.0.0")
     implementation("io.ktor:ktor-server-auth:2.0.0")
