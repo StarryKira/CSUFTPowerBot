@@ -37,9 +37,20 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.0.0")
     implementation("io.ktor:ktor-server-auth-jvm")
 
+    implementation("redis.clients:jedis:4.2.3")
 
+    implementation("io.ktor:ktor-server-core:2.0.0")
+    implementation("io.ktor:ktor-server-netty:2.0.0")
+    implementation("io.ktor:ktor-server-sessions:2.0.0")
+    implementation("io.ktor:ktor-server-auth:2.0.0")
     testImplementation("io.ktor:ktor-server-test-host-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
+    implementation("org.jetbrains.exposed:exposed-core:0.39.1") // Exposed ORM
+    implementation("org.jetbrains.exposed:exposed-dao:0.39.1") // DAO support
+    implementation("org.jetbrains.exposed:exposed-jdbc:0.39.1") // JDBC support
+    implementation("org.postgresql:postgresql:42.3.1") // PostgreSQL JDBC 驱动
+    implementation("org.mindrot:jbcrypt:0.4") // bcrypt 加密库
 
-
+    implementation("org.apache.logging.log4j:log4j-api:2.20.0")
+    implementation("org.apache.logging.log4j:log4j-core:2.20.0")
 }

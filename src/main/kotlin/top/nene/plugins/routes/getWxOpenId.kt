@@ -10,7 +10,7 @@ fun Routing.getWxOpenId() {
     kotlin.runCatching {
         post("/getwxid") {
             val openId = fetchPost("wxOpenId")
-            val meterID = testOpenid(getOpenIdByRegex(openId))
+            val meterID = getMeterID(getOpenIdByRegex(openId))
             if (meterID.equals("114514")) {
                 call.respond(
                     mapOf(

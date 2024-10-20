@@ -15,5 +15,7 @@ fun Routing.refreshPowerBill(){
                 )
             )
         }
+    }.onFailure {
+        it.printStackTrace()
     }
 }

@@ -1,6 +1,5 @@
 package top.nene.plugins.routes
 
-import io.ktor.server.auth.*
 import io.ktor.server.routing.*
 import top.nene.ext.fetchPost
 import top.nene.ext.json
